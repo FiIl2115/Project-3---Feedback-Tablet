@@ -8,16 +8,16 @@ class MQTTClient:
         self.mac = getmac.get_mac_address()
         self.connected_flag = False
         self.bad_connection_flag = False
-       # broker_address="10.120.0.20"
-        #connection_topic="home/review"
-        #self.client = mqtt.Client()
-        #self.client.username_pw_set(username="ubuntu",password="topology")
-        #self.client.connect(broker_address)
-        #self.client.on_publish = self.on_publish
-        #self.client.on_disconnect = self.on_disconnect
-        #self.client.on_connect = self.on_connect
-        #self.client.subscribe(connection_topic)
-        #self.client.loop_start()
+        broker_address="10.120.0.20"
+        connection_topic="home/review"
+        self.client = mqtt.Client()
+        self.client.username_pw_set(username="ubuntu",password="topology")
+        self.client.connect(broker_address)
+        self.client.on_publish = self.on_publish
+        self.client.on_disconnect = self.on_disconnect
+        self.client.on_connect = self.on_connect
+        self.client.subscribe(connection_topic)
+        self.client.loop_start()
 
     def on_publish(self, client, userdata, result):             
         print("data published \n")
