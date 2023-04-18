@@ -1,2 +1,9 @@
 # Project-3---Feedback-Tablet
 In this project, we successfully implemented a feedback tablet using MQTT, a SQL database, a Flask API, and a ReactJS web app to gather customer satisfaction ratings and visualize the data in real-time.
+The end result was a pre-configured package that included the setup of the new network and its components, as well as the feedback device. This system can be easily scaled up to include multiple capture devices and has a focus on ease of deployment, security, and scalability. Despite some challenges, the team was able to create a product that met our expectations.
+
+The context of this project is a situation where a company that wants to improve its customer satisfaction levels. This can be achieved by gathering satisfaction-ratings from customers in real-time. The motivation for this project is to provide a simple and intuitive way for customers to provide feedback, and to give the company valuable insights into clients satisfaction.
+
+The project involves creating a wireless feedback device that allows customers to provide feedback by clicking on one of three buttons: Satisfied, Neutral, or Unsatisfied. The feedback data, along with the MAC address of the device and its position, is sent to a broker using the MQTT protocol. The broker then saves the data in a database and displays the feedback percentages in real-time on a website.
+
+The scope of this project is limited to creating the wireless feedback device and implementing the required infrastructure to send and store the data. The demarcation of this project is that it uses existing old Raspberry Pi devices. The goal is to minimize installation time and automate the deployment of new capture devices. The project also includes configuring a new wireless infrastructure with a suitable security level, assigning IDs to the capture devices, and implementing an administrative system that saves and displays the feedback data in real-time.
